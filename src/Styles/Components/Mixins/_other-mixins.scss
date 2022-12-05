@@ -1,0 +1,14 @@
+@mixin inherits-for-darkmode {
+  color: inherit;
+  background-color: inherit;
+  border-color: inherit;
+}
+
+@mixin link {
+  @include inherits-for-darkmode;
+  text-decoration: none;
+
+  &:hover {
+    color: $hover-color;
+  }
+}

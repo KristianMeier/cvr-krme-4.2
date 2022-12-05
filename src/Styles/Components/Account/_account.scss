@@ -1,0 +1,7 @@
+.my-account {
+  @include component-container;
+
+  .action-btn {
+    @include button($border, $paddingSmallButton);
+  }
+}
